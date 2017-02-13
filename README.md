@@ -51,7 +51,7 @@ val nums = setOf(1, 2, 3)
 // Java + Guava
 ImmutableSet<Integer> nums = ImmutableSet.of(1, 2, 3);
 ```
-P.S. Collections.unmodifiableList(..) is not really immutable.
+P.S. Collections.unmodifiableSet(..) is not really immutable.
 
 #### Mutable Set
 ```kotlin
@@ -75,4 +75,38 @@ Set<Integer> nums = Collections.emptySet();
 
 // Java + Guava
 ImmutableSet<Integer> nums = ImmutableSet.of();
+```
+
+#### Immutable Map
+```kotlin
+// kotlin
+val map = mapOf(1 to "a", 2 to "b", 3 to "c")
+```
+
+```java
+// Java + Guava
+ImmutableMap<Integer, String> map = ImmutableMap.of(1, "a", 2, "b", 3, "c");
+```
+P.S. Collections.unmodifiableMap(..) is not really immutable.
+
+#### Mutable Map
+```kotlin
+// kotlin
+val map = mutableMapOf(4 to "d", 5 to "e", 6 to "f")
+```
+
+```java
+// Java + Guava
+ImmutableMap<Integer, String> map = ImmutableMap.of(1, "a", 2, "b", 3, "c");
+```
+
+#### Empty Map
+```kotlin
+// kotlin
+val map = emptyMap()
+```
+
+```java
+// Java + Guava
+ImmutableMap<Integer> map = ImmutableMap.of();
 ```
