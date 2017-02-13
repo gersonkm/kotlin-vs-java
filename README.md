@@ -1,4 +1,4 @@
-# kotlin-vs-java
+# kotlin vs Java
 
 ## Collection Initialization
 
